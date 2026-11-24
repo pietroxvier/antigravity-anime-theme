@@ -1,4 +1,4 @@
-# ✨ Nocturne Tactical · Antigravity Glassmorphism Theme
+# ✦ Nocturne Tactical · Antigravity Glassmorphism Theme
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg)](LICENSE)
 [![Platform: Windows](https://img.shields.io/badge/Platform-Windows-blue.svg)](#)
@@ -18,6 +18,14 @@ A sleek **Frosted Glassmorphism & Anime Theme** for **Antigravity**, featuring a
 
 ---
 
+## 💬 New Conversation Flow
+
+| Dark Mode Start Screen | Light Mode Start Screen |
+| :---: | :---: |
+| ![New Conversation Dark](assets/preview_new_convo_dark.png) | ![New Conversation Light](assets/preview_new_convo_light.png) |
+
+---
+
 ## ⊞ Tactical Conversation Grid HUD (`Alt + G`)
 
 Manage all your active, pending, and completed conversations in a clean glassmorphic grid overlay:
@@ -31,7 +39,7 @@ Manage all your active, pending, and completed conversations in a clean glassmor
 
 ---
 
-## ✨ Key Features
+## ✦ Key Features
 
 - **Instant Dark / Light Mode Switcher**: Dedicated toggle pill right next to the `✦ Nocturne Tactical · Antigravity` badge in the title bar (or press `Alt + L`). Your preference is automatically persisted in `localStorage`.
 - **Eye-Comfort Night Filter (`Alt + N`)**: Warm sepia/dimming overlay designed to reduce eye strain during late-night coding sessions.
