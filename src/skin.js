@@ -943,7 +943,7 @@ try {
       // SEÇÃO DE COTAS REDESENHADA (HUD MODERNO)
       const quotaSection = document.createElement('div');
       quotaSection.id = 'agy-quota-section';
-      quotaSection.style.cssText = `padding: 12px 22px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; background: ${isLightMode ? 'rgba(246, 240, 255, 0.5)' : 'rgba(14, 6, 28, 0.50)'}; border-bottom: 1px solid ${isLightMode ? 'rgba(147, 51, 234, 0.12)' : 'rgba(192, 132, 252, 0.14)'}; flex-shrink: 0;`;
+      quotaSection.style.cssText = `padding: 10px 22px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px; background: ${isLightMode ? 'rgba(246, 240, 255, 0.5)' : 'rgba(14, 6, 28, 0.50)'}; border-bottom: 1px solid ${isLightMode ? 'rgba(147, 51, 234, 0.12)' : 'rgba(192, 132, 252, 0.14)'}; flex-shrink: 0;`;
 
       function getGroupVisuals(name, minPct) {
         const n = (name || '').toLowerCase();
@@ -995,10 +995,10 @@ try {
             background: ${isLightMode ? 'linear-gradient(155deg, rgba(255, 255, 255, 0.95), rgba(245, 238, 255, 0.90))' : 'linear-gradient(155deg, rgba(46, 23, 82, 0.72), rgba(22, 11, 44, 0.82))'};
             border: 1px solid ${isCrit ? 'rgba(251, 113, 133, 0.48)' : (isLightMode ? 'rgba(147, 51, 234, 0.22)' : 'rgba(216, 180, 254, 0.25)')};
             border-radius: 16px;
-            padding: 12px 14px;
+            padding: 10px 12px;
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 7px;
             box-shadow: ${isLightMode ? '0 4px 16px rgba(147, 51, 234, 0.08)' : '0 6px 20px rgba(0, 0, 0, 0.30), inset 0 1px 0 rgba(255, 255, 255, 0.12)'};
           `;
 
@@ -1018,11 +1018,11 @@ try {
               : '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.85;"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>';
 
             bucketsHtml += `
-              <div style="display: flex; flex-direction: column; gap: 5px; background: ${isLightMode ? 'rgba(238, 230, 252, 0.6)' : 'rgba(14, 6, 28, 0.48)'}; border: 1px solid ${isLightMode ? 'rgba(147, 51, 234, 0.14)' : 'rgba(192, 132, 252, 0.14)'}; border-radius: 10px; padding: 7px 10px;">
+              <div style="display: flex; flex-direction: column; gap: 5px; background: ${isLightMode ? 'rgba(238, 230, 252, 0.6)' : 'rgba(14, 6, 28, 0.48)'}; border: 1px solid ${isLightMode ? 'rgba(147, 51, 234, 0.14)' : 'rgba(192, 132, 252, 0.14)'}; border-radius: 9px; padding: 5px 9px;">
                 <div style="display: flex; justify-content: space-between; align-items: center; gap: 6px;">
                   <span style="color: ${isLightMode ? '#3b1d60' : '#e9d5ff'}; font-size: 11.5px; font-weight: 600; display: inline-flex; align-items: center; gap: 5px;">${winIcon}${winLabel}</span>
                   <div style="display: flex; align-items: center; gap: 7px;">
-                    ${resetTxt ? `<span style="color: ${isLightMode ? '#6b21a8' : '#c084fc'}; font-size: 10px; font-weight: 500; background: ${isLightMode ? 'rgba(147, 51, 234, 0.08)' : 'rgba(139, 92, 246, 0.15)'}; padding: 2px 7px; border-radius: 9999px;">↻ ${resetTxt}</span>` : ''}
+                    ${resetTxt ? `<span style="color: ${isLightMode ? '#581c87' : '#e9d5ff'}; font-size: 10px; font-weight: 500; background: ${isLightMode ? 'rgba(147, 51, 234, 0.10)' : 'rgba(139, 92, 246, 0.22)'}; padding: 2px 7px; border-radius: 9999px;">↻ ${resetTxt}</span>` : ''}
                     <span style="color: ${color}; font-size: 13.5px; font-weight: 800; font-variant-numeric: tabular-nums; text-shadow: 0 0 10px ${glow};">${pct}%</span>
                   </div>
                 </div>
@@ -1070,7 +1070,10 @@ try {
           </button>
           <button id="agy-filter-all" data-filter="all" style="padding: 5px 13px; border-radius: 9999px; font-size: 11.5px; font-weight: 600; cursor: pointer; background: transparent; border: 1px solid transparent; color: ${isLightMode ? '#6b21a8' : '#d8b4fe'}; transition: all 0.15s ease;">Todas (${convos.length})</button>
         </div>
-        <span style="font-size: 11.5px; color: ${isLightMode ? '#6b21a8' : '#c084fc'}; display: flex; align-items: center; gap: 6px;">Atalho: <kbd style="background: ${isLightMode ? 'rgba(147, 51, 234, 0.14)' : 'rgba(192, 132, 252, 0.22)'}; padding: 2px 8px; border-radius: 6px; border: 1px solid ${isLightMode ? 'rgba(147, 51, 234, 0.3)' : 'rgba(192, 132, 252, 0.35)'}; font-weight: 600; font-size: 11px;">Alt + G</kbd></span>
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <input id="agy-grid-search-input" type="text" placeholder="🔍 Filtrar por título..." style="background: ${isLightMode ? 'rgba(255,255,255,0.85)' : 'rgba(12,5,24,0.65)'}; border: 1px solid ${isLightMode ? 'rgba(147,51,234,0.28)' : 'rgba(192,132,252,0.28)'}; color: ${isLightMode ? '#22123b' : '#fcfaff'}; border-radius: 9999px; padding: 4px 12px; font-size: 11.5px; outline: none; width: 190px; transition: border-color 0.15s ease;" />
+          <span style="font-size: 11.5px; color: ${isLightMode ? '#6b21a8' : '#c084fc'}; display: flex; align-items: center; gap: 6px;">Atalho: <kbd style="background: ${isLightMode ? 'rgba(147, 51, 234, 0.14)' : 'rgba(192, 132, 252, 0.22)'}; padding: 2px 8px; border-radius: 6px; border: 1px solid ${isLightMode ? 'rgba(147, 51, 234, 0.3)' : 'rgba(192, 132, 252, 0.35)'}; font-weight: 600; font-size: 11px;">Alt + G</kbd></span>
+        </div>
       `;
 
       // GRID CONTAINER DOS QUADRADINHOS
@@ -1124,11 +1127,11 @@ try {
             background: ${baseBg};
             border: 1px solid ${baseBorder};
             border-radius: 18px;
-            padding: 15px 17px 13px;
+            padding: 12px 15px 11px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            gap: 12px;
+            gap: 10px;
             cursor: pointer;
             backdrop-filter: blur(16px);
             transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
@@ -1167,14 +1170,14 @@ try {
           titleDiv.title = c.title;
           titleDiv.textContent = c.title;
           titleWrap.appendChild(titleDiv);
-          titleWrap.innerHTML += statusDesc;
+          
 
           // FOOTER COM INDICE E BOTAO ABRIR
           const footerRow = document.createElement('div');
           footerRow.style.cssText = `display: flex; align-items: center; justify-content: space-between; font-size: 11px; color: ${isLightMode ? '#6b21a8' : '#c4b5fd'}; border-top: 1px solid ${isLightMode ? 'rgba(147, 51, 234, 0.12)' : 'rgba(216, 180, 254, 0.12)'}; padding-top: 9px; flex-shrink: 0;`;
 
           const indexSpan = document.createElement('span');
-          indexSpan.style.cssText = `font-size: 11px; font-weight: 600; color: ${isLightMode ? 'rgba(107, 33, 168, 0.65)' : 'rgba(216, 180, 254, 0.55)'}; font-variant-numeric: tabular-nums;`;
+          indexSpan.style.cssText = `font-size: 11px; font-weight: 600; color: ${isLightMode ? 'rgba(88, 28, 135, 0.78)' : 'rgba(233, 213, 255, 0.78)'}; font-variant-numeric: tabular-nums;`;
           indexSpan.textContent = '#' + String(idx + 1).padStart(2, '0');
 
           const statusSpan = document.createElement('span');
@@ -1225,9 +1228,11 @@ try {
       }
 
       let currentFilter = 'needs_me';
+      let searchQuery = '';
       const filterBtns = Array.from(filterBar.querySelectorAll('button[data-filter]'));
       const btnWait = filterBar.querySelector('#agy-filter-waiting');
       const btnFin = filterBar.querySelector('#agy-filter-finished');
+      const searchInput = filterBar.querySelector('#agy-grid-search-input');
 
       function applyFilter(filterName) {
         currentFilter = filterName;
@@ -1243,8 +1248,16 @@ try {
             b.style.color = active ? '#fcfaff' : '#d8b4fe';
           }
         });
-        if (filterName === 'all') renderCards(convos);
-        else renderCards(convos.filter(c => c.state === filterName));
+        const baseList = filterName === 'all' ? convos : convos.filter(c => c.state === filterName);
+        const q = searchQuery.trim().toLowerCase();
+        renderCards(q ? baseList.filter(c => c.title.toLowerCase().includes(q)) : baseList);
+      }
+
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          searchQuery = e.target.value || '';
+          applyFilter(currentFilter);
+        });
       }
 
       applyFilter('needs_me');
