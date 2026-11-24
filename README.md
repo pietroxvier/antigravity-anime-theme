@@ -1,4 +1,4 @@
-# ✦ Nocturne Tactical · Antigravity Glassmorphism Theme
+# ◆ Antigravity Anime Theme (Dark & Light Mode)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg)](LICENSE)
 [![Platform: Windows](https://img.shields.io/badge/Platform-Windows-blue.svg)](#)
@@ -54,8 +54,8 @@ Manage all your active, pending, and completed conversations in a clean glassmor
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/pietroxvier/antigravity-nocturne-theme.git
-   cd antigravity-nocturne-theme
+   git clone https://github.com/pietroxvier/antigravity-anime-theme.git
+   cd antigravity-anime-theme
    ```
 2. Run the Python installer (automatically creates an `app.asar.bak` backup before patching):
    ```bash

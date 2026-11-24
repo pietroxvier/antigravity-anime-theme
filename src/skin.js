@@ -670,7 +670,7 @@ try {
         if (!badgeText) {
           badgeText = document.createElement('span');
           badgeText.className = 'agy-badge-text';
-          badgeText.textContent = '✦ Nocturne Tactical · Antigravity';
+          badgeText.textContent = '◆ Nocturne Tactical · Antigravity';
           badge.appendChild(badgeText);
         }
 
@@ -1144,7 +1144,7 @@ try {
             leftBadge = `<span style="display: inline-flex; align-items: center; gap: 6px; font-size: 10px; font-weight: 700; letter-spacing: 0.04em; padding: 3px 9px; border-radius: 9999px; background: rgba(56, 189, 248, 0.16); border: 1px solid rgba(56, 189, 248, 0.48); color: #38bdf8; box-shadow: 0 0 10px rgba(56, 189, 248, 0.2);"><span style="width:6px;height:6px;border-radius:50%;background:#38bdf8;box-shadow:0 0 6px #38bdf8;animation:agyPulseBeacon 1.2s infinite ease-in-out;"></span>PROCESSANDO</span>`;
             statusDesc = `<div style="display:flex;align-items:center;gap:6px;font-size:11.5px;font-weight:500;color:${isLightMode ? '#0284c7' : '#7dd3fc'};background:${isLightMode ? 'rgba(14,165,233,0.1)' : 'rgba(56,189,248,0.10)'};padding:4px 9px;border-radius:8px;margin-top:6px;border:1px solid ${isLightMode ? 'rgba(14,165,233,0.25)' : 'rgba(56,189,248,0.22)'};"><span>⟳</span> Em execução autônoma...</div>`;
           } else if (c.selected) {
-            leftBadge = `<span style="display: inline-flex; align-items: center; gap: 5px; font-size: 10px; font-weight: 700; letter-spacing: 0.04em; padding: 3px 9px; border-radius: 9999px; background: rgba(168, 85, 247, 0.22); border: 1px solid rgba(216, 180, 254, 0.55); color: #f5d0fe; box-shadow: 0 0 12px rgba(168, 85, 247, 0.3);">✦ ATIVA AGORA</span>`;
+            leftBadge = `<span style="display: inline-flex; align-items: center; gap: 5px; font-size: 10px; font-weight: 700; letter-spacing: 0.04em; padding: 3px 9px; border-radius: 9999px; background: rgba(168, 85, 247, 0.22); border: 1px solid rgba(216, 180, 254, 0.55); color: #f5d0fe; box-shadow: 0 0 12px rgba(168, 85, 247, 0.3);">◆ ATIVA AGORA</span>`;
             statusDesc = `<div style="display:flex;align-items:center;gap:6px;font-size:11.5px;font-weight:500;color:${isLightMode ? '#6b21a8' : '#e9d5ff'};background:${isLightMode ? 'rgba(147,51,234,0.1)' : 'rgba(168,85,247,0.12)'};padding:4px 9px;border-radius:8px;margin-top:6px;border:1px solid ${isLightMode ? 'rgba(147,51,234,0.25)' : 'rgba(192,132,252,0.25)'};"><span>●</span> Janela atual focada</div>`;
           } else if (c.state === 'needs_me') {
             leftBadge = `<span style="display: inline-flex; align-items: center; gap: 6px; font-size: 10px; font-weight: 700; letter-spacing: 0.04em; padding: 3px 9px; border-radius: 9999px; background: rgba(245, 158, 11, 0.18); border: 1px solid rgba(251, 191, 36, 0.48); color: #fbbf24; box-shadow: 0 0 12px rgba(245, 158, 11, 0.25);"><span class="agy-new-msg-beacon" style="width:6px;height:6px;background:#fbbf24;box-shadow:0 0 8px #fbbf24;"></span>PRECISA DE VOCÊ</span>`;
