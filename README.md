@@ -54,8 +54,8 @@ Manage all your active, pending, and completed conversations in a clean glassmor
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/pietroxvier/antigravity-nocturne-glass-theme.git
-   cd antigravity-nocturne-glass-theme
+   git clone https://github.com/pietroxvier/antigravity-nocturne-theme.git
+   cd antigravity-nocturne-theme
    ```
 2. Run the Python installer (automatically creates an `app.asar.bak` backup before patching):
    ```bash
