@@ -1302,6 +1302,7 @@ try {
       modal.addEventListener('click', (e) => { if (e.target === modal) modal.remove(); });
       document.body.appendChild(modal);
       document.getElementById('agy-close-grid-btn')?.addEventListener('click', () => modal.remove());
+      setTimeout(() => searchInput?.focus(), 30);
     }
 
     function mountSquareGridButton() {
@@ -1364,15 +1365,22 @@ try {
       const readSet = getReadConvos();
       const rows = document.querySelectorAll('.agy-sidebar-row');
       let unreadCount = 0;
+      let readChanged = false;
       rows.forEach((r, i) => {
         const id = r.getAttribute('data-cascade-id') || ('convo-' + i);
         const sel = r.getAttribute('data-selected') === 'true';
         if (sel) {
-          readSet.add(id);
+          if (!readSet.has(id)) {
+            readSet.add(id);
+            readChanged = true;
+          }
         } else if (!readSet.has(id)) {
           unreadCount++;
         }
       });
+      if (readChanged) {
+        saveReadConvos(readSet);
+      }
       if (btn) {
         const beacon = btn.querySelector('.agy-new-msg-beacon');
         if (beacon) beacon.style.display = unreadCount > 0 ? 'inline-block' : 'none';
@@ -1406,7 +1414,13 @@ try {
             e.preventDefault();
             window.__setEyeComfortMode?.(!document.documentElement.classList.contains('agy-eye-comfort'));
           } else if (e.key === 'Escape') {
-            document.getElementById('agy-project-grid-modal')?.remove();
+            const searchEl = document.getElementById('agy-grid-search-input');
+            if (searchEl && searchEl.value) {
+              searchEl.value = '';
+              searchEl.dispatchEvent(new Event('input', { bubbles: true }));
+            } else {
+              document.getElementById('agy-project-grid-modal')?.remove();
+            }
           }
         });
 
