@@ -1,74 +1,78 @@
-# ✦ Nocturne Tactical · Antigravity Skin (Dark & Light Mode)
+# ✨ Nocturne Tactical · Antigravity Glassmorphism Theme
 
-Uma skin completa com **Glassmorphism**, alternância instantânea entre **Modo Dark (Nocturne)** e **Modo Light (Aurora Celestial)**, barra superior estilo macOS e o painel tático **Quadradinhos de Conversas** para o **Antigravity**.
+[![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg)](LICENSE)
+[![Platform: Windows](https://img.shields.io/badge/Platform-Windows-blue.svg)](#)
+[![Theme: Dark & Light](https://img.shields.io/badge/Theme-Dark%20%26%20Light%20Mode-violet.svg)](#)
 
----
-
-## 🎨 Previews (Dark vs Light)
-
-### 🌙 Modo Dark (Nocturne Tactical)
-![Modo Dark Preview](assets/preview_dark.png)
-
-### ☀️ Modo Light (Aurora Celestial)
-![Modo Light Preview](assets/preview_light.png)
+A sleek **Frosted Glassmorphism & Anime Theme** for **Antigravity**, featuring an instant **Dark / Light Mode** toggle, macOS-style window controls, an eye-comfort night filter, and a tactical **Conversation Grid HUD** (`Alt + G`) with real-time model quota tracking.
 
 ---
 
-## ⊞ Quadradinhos de Conversas (`Alt + G`)
+## 🎨 Visual Previews (Dark & Light Mode)
 
-Painel centralizado com:
-- **Cotas em tempo real** (Gemini, Claude & GPT, Gemini Argon) com barras de progresso e tempo de renovação.
-- **Filtros inteligentes**: *Precisam de mim*, *Em processamento*, *Terminaram* e *Todas*.
-- **Cards contextuais** com badges pulsantes, status de execução e microinterações no hover.
+### 🌙 Dark Mode — *Nocturne Tactical*
+![Dark Mode Preview](assets/preview_dark.png)
 
-| Modo Dark | Modo Light |
+### ☀️ Light Mode — *Aurora Celestial*
+![Light Mode Preview](assets/preview_light.png)
+
+---
+
+## ⊞ Tactical Conversation Grid HUD (`Alt + G`)
+
+Manage all your active, pending, and completed conversations in a clean glassmorphic grid overlay:
+- **Real-Time Quota HUD**: Track remaining 5-hour and weekly quotas for Gemini, Claude & GPT, and Argon models.
+- **Smart Filters**: *Needs Me*, *Processing*, *Finished*, and *All*.
+- **Contextual Status Cards**: Pulsating status beacons, relative timestamps, and smooth hover micro-interactions.
+
+| Dark Mode HUD | Light Mode HUD |
 | :---: | :---: |
-| ![Quadradinhos Dark](assets/preview_grid_dark.png) | ![Quadradinhos Light](assets/preview_grid_light.png) |
+| ![Conversation Grid Dark](assets/preview_grid_dark.png) | ![Conversation Grid Light](assets/preview_grid_light.png) |
 
 ---
 
-## ✨ Recursos Principais
+## ✨ Key Features
 
-- **Alternância Dark / Light Instantânea**: Botão dedicado ao lado do badge `✦ Nocturne Tactical · Antigravity` na barra superior (ou atalho `Alt + L`). Preferência salva automaticamente em `localStorage`.
-- **Modo Conforto Visual (`Alt + N`)**: Filtro quente noturno para reduzir fadiga ocular durante longas sessões.
-- **Quadradinhos de Conversas (`Alt + G`)**: Visão em grade de todos os chats ativos, pendentes e concluídos, acessível pelo botão `⊞` ao lado de *Settings*.
-- **Planos de Fundo Exclusivos**:
+- **Instant Dark / Light Mode Switcher**: Dedicated toggle pill right next to the `✦ Nocturne Tactical · Antigravity` badge in the title bar (or press `Alt + L`). Your preference is automatically persisted in `localStorage`.
+- **Eye-Comfort Night Filter (`Alt + N`)**: Warm sepia/dimming overlay designed to reduce eye strain during late-night coding sessions.
+- **Conversation Grid HUD (`Alt + G`)**: Quick-jump grid modal accessible via keyboard shortcut or the `⊞` button next to *Settings*.
+- **Custom Dual-Mode Wallpapers**:
   - Dark Mode: [nocturne_dark_bg.jpg](assets/nocturne_dark_bg.jpg)
   - Light Mode: [nocturne_light_bg.jpg](assets/nocturne_light_bg.jpg)
 
 ---
 
-## 🚀 Instalação (Windows)
+## 🚀 Quick Installation (Windows)
 
-1. Clone este repositório:
+1. Clone this repository:
    ```bash
-   git clone https://github.com/pietroxvier/nocturne-tactical-antigravity.git
-   cd nocturne-tactical-antigravity
+   git clone https://github.com/pietroxvier/antigravity-nocturne-glass-theme.git
+   cd antigravity-nocturne-glass-theme
    ```
-2. Execute o instalador Python (ele cria um backup automático `app.asar.bak` antes de aplicar):
+2. Run the Python installer (automatically creates an `app.asar.bak` backup before patching):
    ```bash
    python install.py
    ```
-3. No Antigravity, pressione **`Ctrl + R`** (ou reinicie o aplicativo).
+3. Press **`Ctrl + R`** inside Antigravity (or restart the app) to apply.
 
-### Desinstalar / Restaurar Original
+### Uninstall / Restore Original
 ```bash
 python install.py --uninstall
 ```
 
 ---
 
-## ⌨️ Atalhos de Teclado
+## ⌨️ Keyboard Shortcuts
 
-| Atalho | Ação |
+| Shortcut | Action |
 | :--- | :--- |
-| **`Alt + L`** | Alterna entre **Modo Dark** e **Modo Light** |
-| **`Alt + G`** | Abre / fecha o modal **Quadradinhos de Conversas** |
-| **`Alt + N`** | Ativa / desativa o **Modo Conforto Visual** |
-| **`Esc`** | Fecha o modal aberto |
+| **`Alt + L`** | Toggle between **Dark Mode** and **Light Mode** |
+| **`Alt + G`** | Open / close the **Conversation Grid HUD** |
+| **`Alt + N`** | Toggle **Eye-Comfort Night Filter** |
+| **`Esc`** | Close active modal |
 
 ---
 
-## 📄 Licença
+## 📄 License
 
-Distribuído sob a licença MIT. Veja [LICENSE](LICENSE) para mais detalhes.
+Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
